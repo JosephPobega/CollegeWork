@@ -1,4 +1,4 @@
-package hw_5_171;
+package hw_5;
 
 import java.util.Scanner;
 
@@ -8,24 +8,25 @@ public class hw_5 {
 		
 
 			Scanner input = new Scanner(System.in);
-			Double loanAmount, InterestRate, monthlyPayment, totalPayment, MonthlyRate;
-			int numYears, counter;
-			InterestRate = 5.0;
-			counter = 0;
+			Double numberYears, loanAmount, AnnualInterestRate=5.0, MonthlyInterestRate, monthlyPayment, totalPayment;
+		
+			
 			System.out.println("Enter loan amount: ");
 				loanAmount = input.nextDouble();
 				System.out.println("Enter number of years: ");
-				numYears = input.nextInt();
+				numberYears = input.nextDouble();
+				System.out.println("Interest Rate	Monthly Payment	  Total Payment");
 				
-				while(counter <= numYears) {
-					InterestRate = InterestRate + .125;
-					monthlyPayment = loanAmount * InterestRate  /  (1 - 1 / Math.pow(1 + InterestRate, numYears * 12)); 
-					totalPayment = monthlyPayment * numYears * 12;
-					System.out.println("Interest Rate	Monthly Payment	  Total Payment");
-					System.out.printf("%10.3f	%13.2f	%15.2f\n", InterestRate, monthlyPayment, totalPayment);
-					counter++;
+				while(AnnualInterestRate <= 8) {
+					MonthlyInterestRate = AnnualInterestRate/1200;
+					monthlyPayment = loanAmount * MonthlyInterestRate  /  (1 - 1 / Math.pow(1 + MonthlyInterestRate, numberYears * 12)); 
+					totalPayment = monthlyPayment * numberYears * 12;
+					System.out.printf("%5.3f%s\t\t%6.2f\t\t%5.2f\n", AnnualInterestRate, '%', monthlyPayment, totalPayment);
+					AnnualInterestRate += 0.125;
 				}
 			}
 }
 
 		
+
+	
