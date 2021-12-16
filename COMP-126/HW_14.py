@@ -24,4 +24,4 @@ person = Personal(name, adress, age, phoneNumber)
 
 #Design a class that holds the following personal information: 
 # name, address, age, and phone number. Write appropriate accessor and mutator methods.
-#Also design a program that creates three instances of the class.
+#Also design a program that creates three instances of the class. 
