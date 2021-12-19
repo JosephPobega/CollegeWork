@@ -1,73 +1,67 @@
 //Joseph Pobega
-//COMP-171
-
+//COMP 171
 
 import java.util.Scanner;
 public class HW_6 {
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int investmentAmount = 0, years = 30;
-		
-		double monthlyInterestRate, annualInterest, investment;
-		investmentAmount += 0;
-		
-		System.out.println("What is your investment value?:");
-		investmentAmount = input.nextInt();
-		System.out.println("Enter the interest rate:");
-		annualInterest = input.nextDouble()/100;
-		totalInvestment(investmentAmount, annualInterest/12,30);
-	}
-	public static double totalInvestment(double investmentAmount, double annualInterest, int years) {
-		double invest=0;int counter=0;
-		System.out.println("Years\t\tFuture Value");
-		for (counter += 1; counter <= years; counter++) {
-			invest = investmentAmount*(Math.pow(1+annualInterest,counter*12));
-			invest = Math.round(invest*100.0)/100.0;
-			System.out.println(counter+ "\t\t " + invest);
-		}
-		
-		return invest;
-		
-		
-	}
+	 public static void main(String[] args) {
+		  Scanner input = new Scanner(System.in);
+		  int num_years = 30; 
 
-}
+		
+		  System.out.print("\nEnter investment amount: ");
+		  double amount = input.nextDouble();
+		  System.out.print("Enter annual interest percentage: ");
+		  double annualInterestRate = input.nextDouble();
+		  double monthlyInterestRate = annualInterestRate / 1200;
+		  System.out.println("Years     Future Value");
+		  
+		  for (int i = 1; i <= num_years; i++) {
+		   System.out.printf("%-10d", i);
+		   System.out.printf("%11.2f\n", 
+		    futureInvestmentValue(amount, monthlyInterestRate, i));
+		  }
+		 }
+	 
+		 public static double futureInvestmentValue(
+			 double investmentAmount, double monthlyInterestRate, int years) {
+			 return investmentAmount * Math.pow(1 + monthlyInterestRate, years * 12);
+		 }
+		}
+
 
 /*
- What is your investment value?:
-1000
-Enter the interest rate:
-9
-Years		Future Value
-1		 1093.81
-2		 1196.41
-3		 1308.65
-4		 1431.41
-5		 1565.68
-6		 1712.55
-7		 1873.2
-8		 2048.92
-9		 2241.12
-10		 2451.36
-11		 2681.31
-12		 2932.84
-13		 3207.96
-14		 3508.89
-15		 3838.04
-16		 4198.08
-17		 4591.89
-18		 5022.64
-19		 5493.8
-20		 6009.15
-21		 6572.85
-22		 7189.43
-23		 7863.85
-24		 8601.53
-25		 9408.41
-26		 10290.99
-27		 11256.35
-28		 12312.28
-29		 13467.25
-30		 14730.58
+Enter investment amount: 1200
+Enter annual interest percentage: 12
+Years     Future Value
+1             1352.19
+2             1523.68
+3             1716.92
+4             1934.67
+5             2180.04
+6             2456.52
+7             2768.07
+8             3119.13
+9             3514.71
+10            3960.46
+11            4462.75
+12            5028.74
+13            5666.51
+14            6385.16
+15            7194.96
+16            8107.46
+17            9135.69
+18           10294.33
+19           11599.91
+20           13071.06
+21           14728.80
+22           16596.78
+23           18701.67
+24           21073.51
+25           23746.16
+26           26757.77
+27           30151.32
+28           33975.26
+29           38284.18
+30           43139.57
 */
