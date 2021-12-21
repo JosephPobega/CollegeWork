@@ -12,3 +12,12 @@ public class HW_12 {
 			System.out.printf("interest: $%.2f\n", account.MonthlyInterest());
 			}
 		}
+
+
+/*
+Account
+ID:1122
+Date:Tue Dec 21 14:35:02 EST 2021
+Balance:$20500.00
+interest: $76.88
+*/
