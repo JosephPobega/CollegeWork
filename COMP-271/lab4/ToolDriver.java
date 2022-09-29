@@ -40,8 +40,6 @@ public class ToolDriver {
 	}
 	
 	
-	
-	
 	public static String getIt(Object o){
 		if (o instanceof Hammer){
 			return ((Hammer)o).toString();
@@ -59,11 +57,29 @@ public class ToolDriver {
 		Tool(){
 			price = 0;
 	}
-	
 	public Tool(double price){
 		this.price = price;
 }
 }
+	
+	
+	public class Hammer extends Tool{
+		private int weight;
+		
+		Hammer(){	
+			weight = 0;
+		}
+		Hammer(int weight){
+			this.weight = weight;
+		}
+	}
+
+	
+	public class Plyer extends Tool{
+		
+	}
+	
+	
 	
 	
 }
