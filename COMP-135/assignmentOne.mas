@@ -1,0 +1,9 @@
+	LOAD	x
+	ADD	y
+	ADD 	z
+	STORE 	q
+	HALT
+x,	Dec	10
+y,	Dec	3
+z,	Dec	6
+q,	Dec	0
