@@ -1,0 +1,1 @@
+Description: The Nimble Fingers Typing School assigns grades based on words typed per minute. Write a program named TypingGrades that allows a user to enter a student’s number of words typed. The output is the letter grade. For example, if 8 words typed is input, the output should be Typing 8 words per minute: Grade F.
