@@ -1,0 +1,37 @@
+body{
+    background-color: #ffffff;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header{
+    background-color: #000033;
+    font-family: Verdana, Georgia, 'Times New Roman', 
+        Times, serif, sans-serif;
+    color: #FFFFFF; 
+}
+
+h1{
+    line-height: 200%;
+    
+}
+
+nav{
+    font-weight: bold;
+    background-color: skyblue;
+}
+
+h2{
+    color: skyblue;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span{
+    font-weight: bold;
+}
+
+footer{
+    text-size-adjust: .70em;
+    text-decoration: italic;
+    text-align: center;
+}
