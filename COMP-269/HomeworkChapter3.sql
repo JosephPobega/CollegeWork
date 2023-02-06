@@ -47,3 +47,15 @@ ORDER BY ((item_price - discount_amount) * quantity) DESC;
 SELECT order_id, order_date,ship_date
 FROM orders
 WHERE ship_date IS NULL;
+
+
+#7
+SELECT NOW() AS 'today_unformatted', DATE_FORMAT(NOW(), '%d-%b-%Y') AS 'today_formatted';
+
+
+#8
+select 100 as price, .07 as TaxRate, (100*0.07) as TaxAmount, 100+(100*.07) as Total
+
+
+
+
