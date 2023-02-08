@@ -1,6 +1,11 @@
 body{
+    background-image: url("background.jpg");
     background-color: #ffffff;
     font-family: Verdana, Arial, sans-serif;
+    min-width: 700px;
+    max-width: 1024px;
+    filter: drop-shadow();
+    
 }
 
 header{
@@ -12,18 +17,25 @@ header{
 
 h1{
     line-height: 200%;
-    
+    background-image: url("sunset.jpg");
+    background-position: right;
+    padding-left: 20px;
 }
 
 nav{
     font-weight: bold;
     background-color: skyblue;
+    padding: 5px;
 }
 
 h2{
     color: skyblue;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    color: #000033;
 }
 
 span{
@@ -34,4 +46,9 @@ footer{
     text-size-adjust: .70em;
     text-decoration: italic;
     text-align: center;
+    padding: 10px;
+}
+
+nav{
+    text-decoration: none;
 }
