@@ -5,6 +5,7 @@ body{
     min-width: 700px;
     max-width: 1024px;
     filter: drop-shadow();
+    margin-left: 170px;
     
 }
 
@@ -47,8 +48,49 @@ footer{
     text-decoration: italic;
     text-align: center;
     padding: 10px;
+    background-color: white;
+    margin-left: 170px;
 }
 
 nav{
     text-decoration: none;
+    float: left;
+    width: 160px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: blue;
+}
+
+#homehero{
+    margin-left: 170px;
+}
+
+#yurthero{
+    margain-left: 170px;
+}
+#trailhero{
+    margin-left: 170px;
+}
+
+nav a:link{
+    color: #000033;
+}
+
+main{
+    background-color: white;
+    margin-left: 170px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+header, nav, main, footer {
+    display: block;
 }
