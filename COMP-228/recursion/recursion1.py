@@ -7,7 +7,12 @@ def space_count_itr(text):
 
 
 def space_count_rec(text):
-    return -999
+    if len(text) == 0:
+        return 0
+    elif text[0] == ' ':
+        return 1 + space_count_rec(text[1:])
+    else:
+        return space_count_rec(text[1:])
 
 
 def main():
